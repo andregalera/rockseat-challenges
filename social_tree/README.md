@@ -7,4 +7,4 @@ Project is created with:
 * CSS
 	
 ## Final Result
-![Social Tree Page](/files/social_tree.png "Social Tree Page")
+![Social Tree page](./files/social_tree.png "Social Tree page")
