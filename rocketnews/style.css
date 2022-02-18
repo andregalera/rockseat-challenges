@@ -1,0 +1,100 @@
+/* ===== General =====*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+}
+body {
+    background: url("./assets/read_news.jpg") no-repeat top right;
+    background-size: auto 100vh;
+}
+h1, h2, .text-area p:last-child {
+    margin-bottom: 10px;
+}
+.container {
+    background-color: var(--body-bg-color);
+    color: white;
+    font-family: 'Spartan', sans-serif;
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px 20px 50px 50px;
+}
+.container img {
+    height: 12vh;
+}
+.text-area h1 {
+    font-family: 'Work Sans', sans-serif;
+    color: var(--title-color);
+    margin-top: 10vh;
+    font-size: 25px;
+}
+.text-area h2, .text-area p {
+    font-size: 14.5px;
+}
+
+form {
+    margin: 30px 0;
+    color: var(--form-color);
+}
+form label {
+    font-size: 14.5px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 600;
+}
+form .email-input-area {
+    display: flex;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+form .green-rec{
+    width: 5px;
+    background-color: var(--title-color);
+}
+form input {
+    border: none;
+    padding-left: 10px;
+    color: var(--form-color);
+    font-family: 'Work Sans', sans-serif;
+    width: 52.5vw;
+}
+form button {
+    width: 40px;
+    background-color: var(--bg-button-color);
+    border: none;
+}
+.svg {
+    filter: invert(100%) sepia(3%) saturate(7500%) hue-rotate(296deg) brightness(105%) contrast(108%);
+    max-height: 50%;
+}
+.container a {
+    text-decoration: none;
+    color: var(--bg-button-color);
+    font-weight: 600;
+    font-size: 14.5px;
+}
+
+@media screen and (max-width:850px) {
+    body {
+        background: none;
+        height: 100%;
+    }
+    .container {
+        padding: 50px;
+        width: 100%;
+    }
+    .container img {
+        height: 8vh;
+    }
+}
